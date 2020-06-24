@@ -59,6 +59,7 @@ const Formulario = ({ busqueda, guardarBusqueda, guardarConsultar }) => {
           <option value="CR">Costa Rica</option>
           <option value="ES">España</option>
           <option value="PE">Perú</option>
+          <option value="CL">Chile</option>
         </select>
         <label htmlFor="pais">País:</label>
       </div>
