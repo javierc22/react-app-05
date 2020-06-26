@@ -28,15 +28,16 @@ function App() {
 
         guardarResultado(resultado);
         guardarConsultar(false);
+        // Detecta si hubo resultados correctos en la consulta
+        if( resultado.cod === "404"){
+          guardarError(true);
+        } else {
+          guardarError(false);
+        }
       }
     }
     consultarAPI();
-    // Detecta si hubo resultados correctos en la consulta
-    if( resultado.cod === "404"){
-      guardarError(true);
-    } else {
-      guardarError(false);
-    }
+    // eslint-disable-next-line
   }, [consultar]);
 
   let componente;
