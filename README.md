@@ -1,4 +1,13 @@
+# React App 05: Clima desde una API
+
+<img src="./app-img.jpg" height="400" />
+
+* API: https://openweathermap.org/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+---------------------------------------------------------
 
 ## Available Scripts
 
