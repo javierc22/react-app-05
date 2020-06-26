@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Error from './Error';
 
 const Formulario = ({ busqueda, guardarBusqueda, guardarConsultar }) => {
   // state del formulario
@@ -33,7 +34,7 @@ const Formulario = ({ busqueda, guardarBusqueda, guardarConsultar }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      { error ? <p className="red darken-4 error">Todos los campos son onligatorios</p> : null }
+      { error ? <Error mensaje="Ambos campos son obligatorios" /> : null }
       <div className="input-field col s12">
         <input 
           type="text"
